@@ -1,4 +1,4 @@
-#include <iostream>
+ï»¿#include <iostream>
 
 int sum(int num1, int num2) {
 	return num1 + num2;
@@ -7,14 +7,14 @@ void hi() {
 	std::cout << "hello world!!!\n";
 }
 
-//ôóíêöèÿ äëÿ âûâîäà ìàññèâà â êîíñîëü
+//Ñ„ÑƒÐ½ÐºÑ†Ð¸Ñ Ð´Ð»Ñ Ð²Ñ‹Ð²Ð¾Ð´Ð° Ð¼Ð°ÑÑÐ¸Ð²Ð° Ð² ÐºÐ¾Ð½ÑÐ¾Ð»ÑŒ
 void print_arr(int arr[], const int length) {
 	for (int i = 0; i < length; i++)
 		std::cout << arr[i] << " ";
 	std::cout << std::endl;
 }
 
-void mult_x5(int num) { // num - ïàðàìåòð ôóíêöèè 
+void mult_x5(int num) { // num - Ð¿Ð°Ñ€Ð°Ð¼ÐµÑ‚Ñ€ Ñ„ÑƒÐ½ÐºÑ†Ð¸Ð¸ 
 	num *= 5;
 }
 
@@ -41,17 +41,17 @@ int main() {
 	setlocale(0, "");
 	int n, m;
 
-	// Ñîçäàíèå è âûçîâ ôóíêöèè
+	// Ð¡Ð¾Ð·Ð´Ð°Ð½Ð¸Ðµ Ð¸ Ð²Ñ‹Ð·Ð¾Ð² Ñ„ÑƒÐ½ÐºÑ†Ð¸Ð¸
 	
 	hi();
 
-	std::cout << "Ââåäèòå 2 ÷èñëà -> ";
+	std::cout << "Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ 2 Ñ‡Ð¸ÑÐ»Ð° -> ";
 	std::cin >> n >> m;
 	std::cout << sum(n, m) << std::endl;
 	
 
 
-	//Ôóíêöèè ðàáîòàþùèå ñ ìàññèâàìè
+	//Ð¤ÑƒÐ½ÐºÑ†Ð¸Ð¸ Ñ€Ð°Ð±Ð¾Ñ‚Ð°ÑŽÑ‰Ð¸Ðµ Ñ Ð¼Ð°ÑÑÐ¸Ð²Ð°Ð¼Ð¸
 	
 	const int size = 5;
 	int arr[size]{ 7, 15, 32, 23, 65 }; 
@@ -61,25 +61,25 @@ int main() {
 	print_arr(arr, size);
 
 	n = 7;
-	mult_x5(n); // n - Àðãóìåíò ôóíêöèè
+	mult_x5(n); // n - ÐÑ€Ð³ÑƒÐ¼ÐµÐ½Ñ‚ Ñ„ÑƒÐ½ÐºÑ†Ð¸Ð¸
 	std::cout << "n = " << n << std::endl;
 	
 
-	//Çàäà÷à 1. Èíäåêñû ïîëîæèòåëüíûõ ýëåìåíòîâ ìàññèâà
+	//Ð—Ð°Ð´Ð°Ñ‡Ð° 1. Ð˜Ð½Ð´ÐµÐºÑÑ‹ Ð¿Ð¾Ð»Ð¾Ð¶Ð¸Ñ‚ÐµÐ»ÑŒÐ½Ñ‹Ñ… ÑÐ»ÐµÐ¼ÐµÐ½Ñ‚Ð¾Ð² Ð¼Ð°ÑÑÐ¸Ð²Ð°
 	
-	std::cout << "Çàäà÷à 1.\n\n";
-	std::cout << "Ìàññèâ: ";
+	std::cout << "Ð—Ð°Ð´Ð°Ñ‡Ð° 1.\n\n";
+	std::cout << "ÐœÐ°ÑÑÐ¸Ð²: ";
 	const int size1 = 5;
 	int arr1[size1]{ 10, -15, 0, 2, 23 };
 	print_arr(arr1, size1);
-	std::cout << "Èíäåêñû ïîëîæèòåëüíûõ ýëåìåíòîâ:\n";
+	std::cout << "Ð˜Ð½Ð´ÐµÐºÑÑ‹ Ð¿Ð¾Ð»Ð¾Ð¶Ð¸Ñ‚ÐµÐ»ÑŒÐ½Ñ‹Ñ… ÑÐ»ÐµÐ¼ÐµÐ½Ñ‚Ð¾Ð²:\n";
 	positive_elements(arr1, size1);
 	std::cout << '\n';
 	
 
-	//Çàäà÷à 2. Ôàêòîðèàë
-	std::cout << "Çàäà÷à 2.\n\n";
-	std::cout << "Ââåäèòå ÷èñëî -> ";
+	//Ð—Ð°Ð´Ð°Ñ‡Ð° 2. Ð¤Ð°ÐºÑ‚Ð¾Ñ€Ð¸Ð°Ð»
+	std::cout << "Ð—Ð°Ð´Ð°Ñ‡Ð° 2.\n\n";
+	std::cout << "Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ Ñ‡Ð¸ÑÐ»Ð¾ -> ";
 	std::cin >> n;
 	std::cout << n << "! = " << factorial(n) << std::endl; 
 
